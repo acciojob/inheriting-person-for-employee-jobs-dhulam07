@@ -9,8 +9,7 @@ class Person{
 }
 class Employee extends Person{
 	constructor(name,age,jobTitle){
-		this.name=name;
-		this.age=age;
+		super(name,age);
 		this.jobTitle=jobTitle;
 	}
 	jobGreet(){
@@ -18,10 +17,10 @@ class Employee extends Person{
 	}
 }
 
-const Person = new Person("Alice", 25);
+const person = new Person("Alice", 25);
 person.greet();
 
-const Employee = new Employee("Bob", 30, "Manager");
+const employee = new Employee("Bob", 30, "Manager");
 employee.jobGreet();
 
 
