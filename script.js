@@ -7,7 +7,7 @@ class Person{
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
-class Employee{
+class Employee extends Person{
 	constructor(name,age,jobTitle){
 		this.name=name;
 		this.age=age;
